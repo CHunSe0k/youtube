@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Roboto Font CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- YouTube Favicon CDN -->
+    <link rel="icon" href="https://www.youtube.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- 헤더 영역 -->
+    <header>
+        <div class="header-left">
+            <button class="icon-button menu-button">
+                <span class="material-icons">menu</span>
+            </button>
+            <a href="#" class="youtube-logo">
+                <img src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" alt="YouTube">
+                <span class="country-code">KR</span>
+            </a>
+        </div>
+
+        <div class="header-center">
+            <form class="search-form">
+                <div class="search-container">
+                    <input type="text" placeholder="검색">
+                    <button type="button" class="keyboard-icon">
+                        <span class="material-icons">keyboard</span>
+                    </button>
+                </div>
+                <button type="submit" class="search-button">
+                    <span class="material-icons">search</span>
+                </button>
+            </form>
+            <button class="icon-button voice-search-button">
+                <span class="material-icons">mic</span>
+            </button>
+        </div>
+
+        <div class="header-right">
+            <button class="icon-button">
+                <span class="material-icons">video_call</span>
+            </button>
+            <button class="icon-button">
+                <span class="material-icons">notifications</span>
+            </button>
+            <button class="profile-button">
+                <img src="https://yt3.ggpht.com/ytc/AIf8zZTDkajQxPa4sjDOW-c3er1szXkSAO-H8TgwBRWQGw=s88-c-k-c0x00ffffff-no-rj" alt="프로필">
+            </button>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- 사이드바 영역 -->
+        <aside class="sidebar">
+            <!-- 기본 네비게이션 -->
+            <div class="sidebar-section">
+                <a href="#" class="sidebar-item active">
+                    <span class="material-icons">home</span>
+                    <span class="sidebar-text">홈</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <span class="material-icons">explore</span>
+                    <span class="sidebar-text">탐색</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <span class="material-icons">subscriptions</span>
+                    <span class="sidebar-text">구독</span>
+                </a>
+            </div>
+            
+            <div class="sidebar-divider"></div>
+            
+            <!-- 라이브러리 섹션 -->
+            <div class="sidebar-section">
+                <a href="#" class="sidebar-item">
+                    <span class="material-icons">video_library</span>
+                    <span class="sidebar-text">보관함</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <span class="material-icons">history</span>
+                    <span class="sidebar-text">시청 기록</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <span class="material-icons">smart_display</span>
+                    <span class="sidebar-text">내 동영상</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <span class="material-icons">watch_later</span>
+                    <span class="sidebar-text">나중에 볼 동영상</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <span class="material-icons">thumb_up</span>
+                    <span class="sidebar-text">좋아요 표시한 동영상</span>
+                </a>
+            </div>
+            
+            <div class="sidebar-divider"></div>
+            
+            <!-- 구독 채널 섹션 (K-POP 아티스트) -->
+            <div class="sidebar-section">
+                <h3 class="sidebar-heading">구독</h3>
+                <a href="#" class="sidebar-item channel-item">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQ-BgOVVSXPjEVEWkYGKhHMj2FvZ2ioThY5iE9dfw=s176-c-k-c0x00ffffff-no-rj" class="channel-icon" alt="HYBE LABELS">
+                    <span class="sidebar-text">HYBE LABELS</span>
+                </a>
+                <a href="#" class="sidebar-item channel-item">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIf8zZTiYxSNOhi7loR3mg0FjDKgbJXXnuFYUTK5KRkc=s176-c-k-c0x00ffffff-no-rj" class="channel-icon" alt="BLACKPINK">
+                    <span class="sidebar-text">BLACKPINK</span>
+                </a>
+                <a href="#" class="sidebar-item channel-item">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIf8zZT_n_rKIWiqQrjX6gKjVrdR6uzGS3lQCvXiB5Iq=s176-c-k-c0x00ffffff-no-rj" class="channel-icon" alt="SMTOWN">
+                    <span class="sidebar-text">SMTOWN</span>
+                </a>
+                <a href="#" class="sidebar-item channel-item">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIf8zZSeHIYoY53hVK8QITXsJ_FRQMGWnmOlTkLCXn8Rcw=s176-c-k-c0x00ffffff-no-rj" class="channel-icon" alt="JYP Entertainment">
+                    <span class="sidebar-text">JYP Entertainment</span>
+                </a>
+                <a href="#" class="sidebar-item channel-item">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIf8zZR1K12hcTY_QeQRFI-A-tVK0PYSwr6KSnsTLGm1=s176-c-k-c0x00ffffff-no-rj" class="channel-icon" alt="NewJeans">
+                    <span class="sidebar-text">NewJeans</span>
+                </a>
+                <a href="#" class="sidebar-item channel-item">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQjQ7AOm-n8R3UvLWn7hjVJgvQOw8WGSBYYgT8T=s176-c-k-c0x00ffffff-no-rj" class="channel-icon" alt="aespa">
+                    <span class="sidebar-text">aespa</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <span class="material-icons">expand_more</span>
+                    <span class="sidebar-text">더보기</span>
+                </a>
+            </div>
+            
+            <div class="sidebar-divider"></div>
+            
+            <!-- YouTube 서비스 섹션 -->
+            <div class="sidebar-section">
+                <h3 class="sidebar-heading">탐색</h3>
+                <a href="#" class="sidebar-item">
+                    <span class="material-icons">local_fire_department</span>
+                    <span class="sidebar-text">인기 급상승</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <span class="material-icons">music_note</span>
+                    <span class="sidebar-text">음악</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <span class="material-icons">movie</span>
+                    <span class="sidebar-text">영화</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <span class="material-icons">stream</span>
+                    <span class="sidebar-text">실시간</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <span class="material-icons">sports_esports</span>
+                    <span class="sidebar-text">게임</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <span class="material-icons">newspaper</span>
+                    <span class="sidebar-text">뉴스</span>
+                </a>
+            </div>
+            
+            <div class="sidebar-divider"></div>
+            
+            <!-- 기타 링크 -->
+            <div class="sidebar-section">
+                <div class="sidebar-footer-links">
+                    <div class="footer-link-group">
+                        <a href="#">정보</a>
+                        <a href="#">보도자료</a>
+                        <a href="#">저작권</a>
+                        <a href="#">문의하기</a>
+                        <a href="#">크리에이터</a>
+                        <a href="#">광고</a>
+                        <a href="#">개발자</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <a href="#">약관</a>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">정책 및 안전</a>
+                        <a href="#">YouTube 작동의 원리</a>
+                        <a href="#">새로운 기능 테스트하기</a>
+                    </div>
+                </div>
+                <div class="copyright">© 2024 Google LLC</div>
+            </div>
+        </aside>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <main>
+            <!-- 카테고리 탭 -->
+            <div class="category-bar">
+                <button class="category-item active">전체</button>
+                <button class="category-item">K-POP</button>
+                <button class="category-item">믹스</button>
+                <button class="category-item">음악</button>
+                <button class="category-item">BTS</button>
+                <button class="category-item">BLACKPINK</button>
+                <button class="category-item">NewJeans</button>
+                <button class="category-item">aespa</button>
+                <button class="category-item">라이브</button>
+                <button class="category-item">최근에 업로드된 영상</button>
+                <button class="category-item">IVE</button>
+                <button class="category-item">TWICE</button>
+            </div>
+
+            <!-- 동영상 그리드 -->
+            <div class="video-grid">
+                <!-- K-POP 비디오 카드 1 -->
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/jBGKsgdpbcg/hqdefault.jpg" alt="NewJeans OMG">
+                        <span class="video-duration">3:41</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIf8zZR1K12hcTY_QeQRFI-A-tVK0PYSwr6KSnsTLGm1=s176-c-k-c0x00ffffff-no-rj" alt="NewJeans">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">NewJeans (뉴진스) 'OMG' Official MV</h3>
+                            <div class="channel-name">NewJeans</div>
+                            <div class="video-metadata">조회수 2.4억회 • 1년 전</div>
+                        </div>
+                        <div class="video-menu">
+                            <button class="icon-button">
+                                <span class="material-icons">more_vert</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- K-POP 비디오 카드 2 -->
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/7HDeem-JaSY/hqdefault.jpg" alt="aespa Drama">
+                        <span class="video-duration">3:34</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQjQ7AOm-n8R3UvLWn7hjVJgvQOw8WGSBYYgT8T=s176-c-k-c0x00ffffff-no-rj" alt="aespa">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">aespa 에스파 'Drama' MV</h3>
+                            <div class="channel-name">aespa</div>
+                            <div class="video-metadata">조회수 8,800만회 • 6개월 전</div>
+                        </div>
+                        <div class="video-menu">
+                            <button class="icon-button">
+                                <span class="material-icons">more_vert</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- K-POP 비디오 카드 3 -->
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/UBURTj20HXI/hqdefault.jpg" alt="BTS Butter">
+                        <span class="video-duration">2:58</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQ-BgOVVSXPjEVEWkYGKhHMj2FvZ2ioThY5iE9dfw=s176-c-k-c0x00ffffff-no-rj" alt="HYBE LABELS">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">BTS (방탄소년단) 'Butter' Official MV</h3>
+                            <div class="channel-name">HYBE LABELS</div>
+                            <div class="video-metadata">조회수 8.5억회 • 2년 전</div>
+                        </div>
+                        <div class="video-menu">
+                            <button class="icon-button">
+                                <span class="material-icons">more_vert</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- K-POP 비디오 카드 4 -->
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/POe9SOEKotk/hqdefault.jpg" alt="IVE LOVE DIVE">
+                        <span class="video-duration">3:23</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIf8zZThU3rkEZiQuYYGXFB0lLHiIIZ7j9X8SRz5Wqf2lQ=s176-c-k-c0x00ffffff-no-rj" alt="스타쉽엔터테인먼트">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">IVE 아이브 'LOVE DIVE' MV</h3>
+                            <div class="channel-name">스타쉽엔터테인먼트</div>
+                            <div class="video-metadata">조회수 1.9억회 • 2년 전</div>
+                        </div>
+                        <div class="video-menu">
+                            <button class="icon-button">
+                                <span class="material-icons">more_vert</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- K-POP 비디오 카드 5 -->
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/fE2h3lGlOsk/hqdefault.jpg" alt="BLACKPINK Pink Venom">
+                        <span class="video-duration">3:07</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIf8zZTiYxSNOhi7loR3mg0FjDKgbJXXnuFYUTK5KRkc=s176-c-k-c0x00ffffff-no-rj" alt="BLACKPINK">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">BLACKPINK - 'Pink Venom' M/V</h3>
+                            <div class="channel-name">BLACKPINK</div>
+                            <div class="video-metadata">조회수 6.3억회 • 1년 전</div>
+                        </div>
+                        <div class="video-menu">
+                            <button class="icon-button">
+                                <span class="material-icons">more_vert</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- K-POP 비디오 카드 6 -->
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/gyNYCwj7Q6A/hqdefault.jpg" alt="FIFTY FIFTY Cupid">
+                        <span class="video-duration">2:54</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.googleusercontent.com/Jud9bEDXBSgToi06J58lBWG4OjjKPMbRzJf_YDMYjPGsRYYR4KUvmWBwpvrdYB5TJkJZPMpY=s176-c-k-c0x00ffffff-no-rj" alt="FIFTY FIFTY">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">FIFTY FIFTY(피프티 피프티) - 'Cupid' Twin Ver.</h3>
+                            <div class="channel-name">FIFTY FIFTY</div>
+                            <div class="video-metadata">조회수 1.2억회 • 11개월 전</div>
+                        </div>
+                        <div class="video-menu">
+                            <button class="icon-button">
+                                <span class="material-icons">more_vert</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- K-POP 비디오 카드 7 -->
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/F0B7HDiY-10/hqdefault.jpg" alt="Stray Kids S-Class">
+                        <span class="video-duration">3:15</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIf8zZSeHIYoY53hVK8QITXsJ_FRQMGWnmOlTkLCXn8Rcw=s176-c-k-c0x00ffffff-no-rj" alt="JYP Entertainment">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">Stray Kids "S-Class" M/V</h3>
+                            <div class="channel-name">JYP Entertainment</div>
+                            <div class="video-metadata">조회수 1.3억회 • 11개월 전</div>
+                        </div>
+                        <div class="video-menu">
+                            <button class="icon-button">
+                                <span class="material-icons">more_vert</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- K-POP 비디오 카드 8 -->
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/zW-AIXAnLcE/hqdefault.jpg" alt="NewJeans Super Shy">
+                        <span class="video-duration">2:35</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIf8zZR1K12hcTY_QeQRFI-A-tVK0PYSwr6KSnsTLGm1=s176-c-k-c0x00ffffff-no-rj" alt="NewJeans">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">NewJeans (뉴진스) 'Super Shy' Official MV</h3>
+                            <div class="channel-name">NewJeans</div>
+                            <div class="video-metadata">조회수 1.4억회 • 10개월 전</div>
+                        </div>
+                        <div class="video-menu">
+                            <button class="icon-button">
+                                <span class="material-icons">more_vert</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- K-POP 비디오 카드 9 -->
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/Ccz123Jlflc/hqdefault.jpg" alt="LE SSERAFIM EASY">
+                        <span class="video-duration">3:28</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.googleusercontent.com/RQNujROG6N-Gf9jxpJC9QqQjEnn49c9ziPEgC39Z4PCAyQNbJcyRBd5rNWbB7NusQQi4MbCjpQ=s176-c-k-c0x00ffffff-no-rj" alt="LE SSERAFIM">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">LE SSERAFIM (르세라핌) 'EASY' OFFICIAL M/V</h3>
+                            <div class="channel-name">LE SSERAFIM</div>
+                            <div class="video-metadata">조회수 8,200만회 • 3개월 전</div>
+                        </div>
+                        <div class="video-menu">
+                            <button class="icon-button">
+                                <span class="material-icons">more_vert</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- K-POP 비디오 카드 10 -->
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/CuklIb9d3fI/hqdefault.jpg" alt="TWICE Set Me Free">
+                        <span class="video-duration">3:12</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIf8zZSeHIYoY53hVK8QITXsJ_FRQMGWnmOlTkLCXn8Rcw=s176-c-k-c0x00ffffff-no-rj" alt="JYP Entertainment">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">TWICE "Set Me Free" M/V</h3>
+                            <div class="channel-name">JYP Entertainment</div>
+                            <div class="video-metadata">조회수 7,700만회 • 1년 전</div>
+                        </div>
+                        <div class="video-menu">
+                            <button class="icon-button">
+                                <span class="material-icons">more_vert</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- K-POP 비디오 카드 11 -->
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/Os_heh8vPfs/hqdefault.jpg" alt="IVE I AM">
+                        <span class="video-duration">3:04</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIf8zZThU3rkEZiQuYYGXFB0lLHiIIZ7j9X8SRz5Wqf2lQ=s176-c-k-c0x00ffffff-no-rj" alt="스타쉽엔터테인먼트">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">IVE 아이브 'I AM' MV</h3>
+                            <div class="channel-name">스타쉽엔터테인먼트</div>
+                            <div class="video-metadata">조회수 1.2억회 • 1년 전</div>
+                        </div>
+                        <div class="video-menu">
+                            <button class="icon-button">
+                                <span class="material-icons">more_vert</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- K-POP 비디오 카드 12 -->
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/c9BRXGqYbvE/hqdefault.jpg" alt="Stray Kids MANIAC">
+                        <span class="video-duration">3:27</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIf8zZSeHIYoY53hVK8QITXsJ_FRQMGWnmOlTkLCXn8Rcw=s176-c-k-c0x00ffffff-no-rj" alt="JYP Entertainment">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">Stray Kids "MANIAC" M/V</h3>
+                            <div class="channel-name">JYP Entertainment</div>
+                            <div class="video-metadata">조회수 1.7억회 • 2년 전</div>
+                        </div>
+                        <div class="video-menu">
+                            <button class="icon-button">
+                                <span class="material-icons">more_vert</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
