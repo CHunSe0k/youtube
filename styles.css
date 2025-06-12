@@ -11,7 +11,7 @@ body {
     overflow-x: hidden;
 }
 
-/* 헤더 스타일 */
+/* 헤더 부분 스타일 */
 header {
     display: flex;
     justify-content: space-between;
@@ -156,14 +156,14 @@ header {
     object-fit: cover;
 }
 
-/* 메인 컨테이너 */
+/* 메인 컨테이너 부분 */
 .main-container {
     display: flex;
     margin-top: 56px;
     height: calc(100vh - 56px);
 }
 
-/* 사이드바 */
+/* 사이드바 부분 */
 .sidebar {
     width: 240px;
     background: #0f0f0f;
@@ -279,7 +279,7 @@ header {
     color: #717171;
 }
 
-/* 메인 콘텐츠 */
+/* 메인 콘텐츠 부분 */
 main {
     margin-left: 240px;
     padding: 24px 24px 0 24px;
@@ -287,7 +287,7 @@ main {
     overflow-y: auto;
 }
 
-/* 카테고리 탭 바 */
+/* 카테고리 탭 부분 */
 .category-bar {
     display: flex;
     overflow-x: auto;
@@ -297,11 +297,11 @@ main {
     background-color: #0f0f0f;
     z-index: 30;
     padding-bottom: 10px;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none; /* 파이어 폭스. */
 }
 
 .category-bar::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none; /* 크롬 사파리 엣지까지 */
 }
 
 .category-item {
@@ -325,14 +325,14 @@ main {
     color: #0f0f0f;
 }
 
-/* 비디오 그리드 */
+/* 동영상 부분1 */
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 16px;
 }
 
-/* 비디오 카드 */
+/* 동영상 부분2 */
 .video-card {
     margin-bottom: 40px;
     cursor: pointer;
@@ -386,7 +386,7 @@ main {
 
 .video-details {
     flex: 1;
-    min-width: 0; /* 텍스트 오버플로우 방지 */
+    min-width: 0; /* 텍스트가 넘쳐서 방지하기위해! */
 }
 
 .video-title {

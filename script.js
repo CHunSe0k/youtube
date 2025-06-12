@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 카테고리 탭 활성화 처리
+    // 카테고리 탭 활성화 하기.
     const categoryButtons = document.querySelectorAll('.category-item');
     categoryButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // 모든 버튼에서 active 클래스 제거
+            // 모든 버튼 액티브 요소 제거하기
             categoryButtons.forEach(btn => btn.classList.remove('active'));
-            // 클릭된 버튼에 active 클래스 추가
+            // 클릭한 버튼 액티브 요소 추가하기
             this.classList.add('active');
         });
     });
 
-    // 토글 메뉴 버튼 기능
+    // 토글 메뉴 버튼 기능 구현..
     const menuButton = document.querySelector('.menu-button');
     const sidebar = document.querySelector('.sidebar');
     const mainContent = document.querySelector('main');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 검색 포커스 효과
+    // 검색 효과
     const searchInput = document.querySelector('.search-container input');
     const searchContainer = document.querySelector('.search-container');
     
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         searchContainer.style.borderRight = 'none';
     });
 
-    // 스크롤 이벤트로 카테고리 바 고정
+    // 스크롤 시 카테고리 고정하기
     window.addEventListener('scroll', function() {
         const categoryBar = document.querySelector('.category-bar');
         const mainScrollPosition = window.scrollY;
@@ -65,16 +65,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 비디오 카드 호버 효과 (썸네일 확대)는 CSS 트랜지션으로 구현
+    // 동영상 호버 효과 (썸네일 확대)는 CSS 트랜지션으로 구현했는데 동영상 호버가 잘 되지 않음.
 
-    // 검색 폼 제출 방지 (데모 용도)
+    // 검색 했을때, 작동하지 않는다는걸 표기 (목업으로 만드는 기초 페이지기 때문에 만들기는 너무 어려운 요소였음)
     const searchForm = document.querySelector('.search-form');
     searchForm.addEventListener('submit', function(e) {
         e.preventDefault();
         alert('검색 기능은 실제로 작동하지 않습니다. 데모 페이지입니다.');
     });
 
-    // 반응형 디자인을 위한 미디어 쿼리 처리
+    // 반응형 디자인을 미디어 쿼리 처리하기.
     function handleResponsiveLayout() {
         if (window.innerWidth <= 992) {
             sidebar.classList.add('collapsed');
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // 초기 로드 및 화면 크기 변경 시 레이아웃 조정
+    // 화면 크기 변경 시 레이아웃 크기 조정 하는 것
     handleResponsiveLayout();
     window.addEventListener('resize', handleResponsiveLayout);
 });
